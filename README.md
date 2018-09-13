@@ -1,1 +1,1 @@
-# ss.com
+# Personal Website for professional career
