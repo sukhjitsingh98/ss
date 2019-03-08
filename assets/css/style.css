@@ -317,13 +317,76 @@ ul.list-check li::before {
 
 
 /* === HOME === */
-@media (max-width : 640px) {
+/@media (max-width : 640px) {
     .tt-fullHeight{
         height: 560px !important;
     }
 }
 
+/* Default to hide the video on all devices */
+#video{display:none}
 
+/* Default to display the image on all devices */
+#videosubstitute{display:block;width:auto;height:100%;}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#fullScreenDiv{
+    width:100%;
+    min-height: 50%; 
+   /* Set the height to match that of the viewport. */
+    height: 100vh;
+    width: auto;
+    padding:0!important;
+    margin: 0!important;
+    background-color: gray;
+    position: relative;
+}
+#fullScreenDiv:before {
+	content: "";
+	background-color: rgba(26, 30, 35, 0.85);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#video{    
+    width: 100%; 
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
+    left: 200px;
+    top: 0px;
+    z-index: -1;
+}
+
+/*@media (min-aspect-ratio: 16/9) {
+  #video{
+    height: 150%;
+    bottom: -100%;
+  }
+  #videosubstitute{
+    display:block;
+    width: 100%;
+    height: auto;}
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #video {
+    width: 150%;
+    left: -100%;
+  }
+  #videosubstitute{display:block;width:auto;height:100%;}
+}*/
+/*if there is 992  pixels or more, then display the video but hide the image*/
+@media only screen and (min-width : 992px) {
+#video{display:block;}
+#videosubstitute{display:none}
+}
+/*
 #home {
 	background: url(../images/circuit.jpg) no-repeat center center;
 	-webkit-background-attachment: fixed;
@@ -342,7 +405,7 @@ ul.list-check li::before {
 	width: 100%;
 	height: 100%;
 }
-
+*/
 .intro {
 	position: absolute;
 	width: 100%;
