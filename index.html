@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="IAMX, One Page Responsive HTML Resume Template">
-  <meta name="keywords" content="onepage, resume, CV HTML template, personal Vcard, html resume, free resume template, free HTML template, free bootstrap template, personal portfolio, free html portfolio">
+	<meta name="description" content="Personal website">
+  <meta name="keywords" content="personal website">
 	
 
 	<title>Sukhjit Singh </title>
@@ -46,16 +46,15 @@
 
 	<!-- Home Section -->
 	<section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
-        
-       <div id="fullScreenDiv">
+        <header class="v-header container">
         <img src="assets/images/circuit.jpg" id="videosubstitute" alt="Full screen background video">
-        <div id="videoDiv">           
-            <video autoplay muted loop preload="preload" id="video" >
-            <source src="assets/images/stock-footage-flying-over-a-futuristic-circuit-board-with-moving-electrons-ending-on-the-cpu-transparent-blue.webm" type="video/webm"></source>
-         
-            </video> 
+            <div class="fullscreen-video-wrap"> 
+                 
+            <video src="assets/images/stock-footage-flying-over-a-futuristic-circuit-board-with-moving-electrons-ending-on-the-cpu-transparent-blue.webm" autoplay="true" loop="true" muted="true"></video>
         </div>
-        </div>
+            
+        <div id="fullScreenDiv"></div>
+            </header>
         <div class="intro">
            <h1>Sukhjit <span>Singh</span></h1>
 			<div class="intro-sub"><h2>Aspiring Electrical Engineer</h2></div>
@@ -72,6 +71,7 @@
 		<div class="mouse-icon">
 			<div class="wheel"></div>
 		</div>
+        
 	</section><!-- End Home Section -->
 
 
@@ -321,7 +321,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-1 col-sm-4 col-md-2">
+            <div class="col-xs-12 col-sm-4 col-md-2">
               <div class="chart" data-percent="100" data-color="e74c3c">
                     <span class="percent"></span>
                     <div class="chart-text wow fadeInUp">
